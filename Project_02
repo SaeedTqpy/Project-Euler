@@ -1,0 +1,20 @@
+def fibo (first_num,last_num):
+
+  temp = 0
+  
+  ''''
+  
+  By considering the terms in the Fibonacci sequence whose values do not exceed four million
+  find the sum of the even-valued terms. 
+  
+  '''''
+  Sum = 0
+  while(Sum<=4000000):
+    temp = first_num + last_num
+    print(temp)     # for Testing 
+    if(temp % 2 ==0):
+      Sum += temp
+    first_num = last_num
+    last_num = temp
+  return ('Sum iS =  :',Sum)
+print(fibo(0,1))
