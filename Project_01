@@ -1,0 +1,13 @@
+def multi(rang):
+  ''''
+  sum of all the multiples of 3 or 5 below 1000
+  '''''
+  i=0
+  Sum=0
+  while(i<(rang)):
+    if(i%3==0 or i%5==0):
+      Sum+=i
+    i=i+1
+  return Sum
+    
+print(multi(1000)) #input range
