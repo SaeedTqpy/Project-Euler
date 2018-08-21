@@ -1,0 +1,33 @@
+
+def sm():
+    Sum = 0
+    i = 1
+    while(i<101):
+        Sum += i * i
+        i+=1
+    return Sum    
+    
+    ''''
+    ---------------------------
+    ---------------------------
+    
+   ''''
+   
+  def sm1():
+    i = 0
+    Sum = 0
+    while(i < 101):
+        Sum += i
+        i += 1
+    Sum *= Sum
+    return Sum
+print(sm1())
+
+''''
+-------------------------------
+-------------------------------
+''''
+def Sub():
+    Sub_ans= sm1()-sm()
+    return Sub_ans
+print(Sub())
