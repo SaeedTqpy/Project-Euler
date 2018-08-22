@@ -1,0 +1,26 @@
+import math
+def is_prime(n):
+    if n % 2 == 0 and n > 2: 
+        return False
+    return all(n % i for i in range(3, int(math.sqrt(n)) + 1, 2))
+    
+    ''''
+    --------------------------------------------
+    --------------------------------------------
+    ''''
+    
+    def max_prime(cn):
+    Max_cn = 0
+    while(cn <= 100000002):
+        if(is_prime(int(cn)) == True):
+            Max = cn
+            Max_cn += 1
+            print('max is : ',cn)
+            print('max Cn : ',Max_cn)
+            if (Max_cn == 10001):
+              Max = cn
+              break
+            
+        cn += 1
+    return Max
+print(max_prime(2))
