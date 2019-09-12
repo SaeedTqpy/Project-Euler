@@ -5,6 +5,7 @@ def multi(rang):
   i=0
   Sum=0
   while(i<(rang)):
+  
     if(i%3==0 or i%5==0):
       Sum+=i
     i=i+1
